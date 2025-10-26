@@ -1,0 +1,296 @@
+
+        <!DOCTYPE html>
+        <html lang="zh-CN">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>智能归因分析报告</title>
+            <style>
+                body {
+                    font-family: 'Microsoft YaHei', 'SimHei', Arial, sans-serif;
+                    line-height: 1.6;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f5f5f5;
+                }
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    background-color: white;
+                    padding: 30px;
+                    border-radius: 10px;
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                }
+                h1 {
+                    color: #2c3e50;
+                    text-align: center;
+                    border-bottom: 3px solid #3498db;
+                    padding-bottom: 10px;
+                    margin-bottom: 30px;
+                }
+                h2 {
+                    color: #34495e;
+                    border-left: 4px solid #3498db;
+                    padding-left: 15px;
+                    margin-top: 30px;
+                }
+                h3 {
+                    color: #2c3e50;
+                    margin-top: 25px;
+                }
+                .info-box {
+                    background-color: #ecf0f1;
+                    border-left: 4px solid #3498db;
+                    padding: 15px;
+                    margin: 15px 0;
+                    border-radius: 5px;
+                }
+                .success-box {
+                    background-color: #d5f4e6;
+                    border-left: 4px solid #27ae60;
+                    padding: 15px;
+                    margin: 15px 0;
+                    border-radius: 5px;
+                }
+                .warning-box {
+                    background-color: #fef9e7;
+                    border-left: 4px solid #f39c12;
+                    padding: 15px;
+                    margin: 15px 0;
+                    border-radius: 5px;
+                }
+                .judgment-table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 20px 0;
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                }
+                .judgment-table th,
+                .judgment-table td {
+                    border: 1px solid #ddd;
+                    padding: 12px;
+                    text-align: left;
+                }
+                .judgment-table th {
+                    background-color: #3498db;
+                    color: white;
+                    font-weight: bold;
+                }
+                .judgment-table tr:nth-child(even) {
+                    background-color: #f8f9fa;
+                }
+                .judgment-table tr:hover {
+                    background-color: #e8f4fd;
+                }
+                .status-success {
+                    color: #27ae60;
+                    font-weight: bold;
+                }
+                .status-failed {
+                    color: #e74c3c;
+                    font-weight: bold;
+                }
+                .chart-container {
+                    text-align: center;
+                    margin: 20px 0;
+                }
+                .chart-container img {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                }
+                .insights-list {
+                    background-color: #f8f9fa;
+                    padding: 20px;
+                    border-radius: 8px;
+                    margin: 20px 0;
+                }
+                .insights-list li {
+                    margin: 10px 0;
+                    padding: 8px 0;
+                    border-bottom: 1px solid #e9ecef;
+                }
+                .insights-list li:last-child {
+                    border-bottom: none;
+                }
+                .limitations {
+                    background-color: #fff3cd;
+                    border: 1px solid #ffeaa7;
+                    border-radius: 8px;
+                    padding: 20px;
+                    margin: 20px 0;
+                }
+                .suggestions {
+                    background-color: #d1ecf1;
+                    border: 1px solid #bee5eb;
+                    border-radius: 8px;
+                    padding: 20px;
+                    margin: 20px 0;
+                }
+                .metric-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 15px;
+                    margin: 20px 0;
+                }
+                .metric-card {
+                    background-color: #f8f9fa;
+                    padding: 15px;
+                    border-radius: 8px;
+                    text-align: center;
+                    border-left: 4px solid #3498db;
+                }
+                .metric-value {
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: #2c3e50;
+                }
+                .metric-label {
+                    color: #7f8c8d;
+                    margin-top: 5px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>智能归因分析报告</h1>
+                
+                <div class="info-box">
+                    <strong>生成时间</strong>: 2025年08月20日 15:37:07
+                </div>
+                
+                
+        <div class="info-box">
+            <h3>数据概览</h3>
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-value">63,173</div>
+                    <div class="metric-label">数据行数</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">72</div>
+                    <div class="metric-label">数据列数</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">181.39 MB</div>
+                    <div class="metric-label">内存使用</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">0</div>
+                    <div class="metric-label">重复记录</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">961,660</div>
+                    <div class="metric-label">总缺失值</div>
+                </div>
+            </div>
+        </div>
+        
+                
+                
+        <div class="algorithm-judgment">
+            <h2>《算法判定结果》</h2>
+            <table class="judgment-table">
+                <thead>
+                    <tr>
+                        <th>算法</th>
+                        <th>适用理由</th>
+                        <th>置信度</th>
+                        <th>是否执行</th>
+                        <th>备注</th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                    <tr>
+                        <td>描述统计</td>
+                        <td>基础描述性统计，适用于所有数据集</td>
+                        <td>0.95</td>
+                        <td class="status-success">✅ 执行</td>
+                        <td>条件满足，已执行</td>
+                    </tr>
+            
+                    <tr>
+                        <td>相关性分析</td>
+                        <td>检测到11个数值型字段，适合进行相关性分析</td>
+                        <td>0.90</td>
+                        <td class="status-success">✅ 执行</td>
+                        <td>条件满足，已执行</td>
+                    </tr>
+            
+                    <tr>
+                        <td>时间趋势分析</td>
+                        <td>检测到时间字段和数值字段，适合进行时间序列分析</td>
+                        <td>0.85</td>
+                        <td class="status-success">✅ 执行</td>
+                        <td>条件满足，已执行</td>
+                    </tr>
+            
+                    <tr>
+                        <td>分类分析</td>
+                        <td>检测到39个分类字段，适合进行分类分析</td>
+                        <td>0.80</td>
+                        <td class="status-success">✅ 执行</td>
+                        <td>条件满足，已执行</td>
+                    </tr>
+            
+                </tbody>
+            </table>
+        </div>
+        
+                
+                
+        <div class="info-box">
+            <h3>各算法结果</h3>
+        
+                <div class="success-box">
+                    <h4>描述统计</h4>
+            
+        <div class="info-box">
+            <h3>描述统计</h3>
+        
+            <p><strong>基础统计</strong>:</p>
+            <ul>
+                <li>总记录数: 63,173</li>
+                <li>总列数: 72</li>
+                <li>重复记录: 0</li>
+                <li>总缺失值: 961,660</li>
+            </ul>
+        <p><strong>数值列统计</strong> (共11列):</p><ul><li>wish_number: 均值=20249291221727.07, 标准差=3814100011.10, 范围=[20220300000000.00, 20250400000000.00]</li><li>current_retained_locked_count: 均值=0.01, 标准差=0.09, 范围=[0.00, 1.00]</li><li>waiting_deposit_count: 均值=0.18, 标准差=0.38, 范围=[0.00, 1.00]</li><li>waiting_lock_count: 均值=0.00, 标准差=0.00, 范围=[0.00, 0.00]</li><li>current_period_refund_count: 均值=0.08, 标准差=0.28, 范围=[0.00, 1.00]</li><li>... 还有6个数值列</li></ul><p><strong>分类列统计</strong> (共40列):</p><ul><li>order_number: 63173个唯一值, 最常见='SO0008fe5c01' (1次)</li><li>blind_lock_status: 2个唯一值, 最常见='否' (63137次)</li><li>is_enterprise: 2个唯一值, 最常见='N' (60428次)</li><li>... 还有37个分类列</li></ul></div>
+                </div>
+            
+                <div class="warning-box">
+                    <h4>相关性分析</h4>
+                    <p><strong>执行状态</strong>: ❌ 执行失败</p>
+                    <p><strong>错误信息</strong>: 未指定数值列</p>
+                </div>
+                
+                <div class="warning-box">
+                    <h4>时间趋势分析</h4>
+                    <p><strong>执行状态</strong>: ❌ 执行失败</p>
+                    <p><strong>错误信息</strong>: 缺少日期列或数值列</p>
+                </div>
+                
+                <div class="warning-box">
+                    <h4>分类分析</h4>
+                    <p><strong>执行状态</strong>: ❌ 执行失败</p>
+                    <p><strong>错误信息</strong>: 未指定分类列</p>
+                </div>
+                
+        </div>
+        
+                
+                
+        <div class="info-box">
+            <h3>关键洞察</h3>
+        <ul><li>1. 数据缺失率较高(21.1%)，建议进行缺失值处理</li><li>2. 建议进一步探索数据特征，可能需要更多的特征工程</li><li>3. 考虑收集更多相关数据以提高分析深度</li></ul></div>
+                
+                
+        <div class="limitations">
+            <h3>局限与下一步建议</h3>
+        <p>### 特征局限</p><ul><li>数值特征较少(0个)，限制了某些高级分析方法的应用</li><li>建议增加数值型特征或进行特征工程</li></ul><p>### 下一步建议</p><ul><li>1. **数据清洗**: 处理缺失值、异常值和重复数据</li><li>2. **特征工程**: 创建新的特征变量，提高模型性能</li><li>3. **模型优化**: 尝试不同的算法和参数组合</li><li>4. **验证分析**: 使用交叉验证等方法验证模型稳定性</li><li>5. **业务解释**: 结合业务背景深入解释分析结果</li></ul></div>
+            </div>
+        </body>
+        </html>
+        
